@@ -1,4 +1,4 @@
-# Decryption Using Substitusi Caesar CIPHER
+# Decryption Using Caesar CIPHER Subtitution
 # JULIO ANDYAN JORDAN ARYANTO (24060117130078)
 from array import *
 from nltk import *
