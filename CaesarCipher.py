@@ -1,15 +1,16 @@
-# DEKRIPSI MENGGUNAKAN Substitusi Caesar CIPHER
+# Decryption Using Substitusi Caesar CIPHER
 # JULIO ANDYAN JORDAN ARYANTO (24060117130078)
 from array import *
 from nltk import *
 
-#CATATAN :
-# Dekripsi dilakukan dengan menggunakan subtitusi caesar cipher dengan 3 huruf ke kanan
+#Note :
+# language ind/eng
+# (ind)Dekripsi dilakukan dengan menggunakan subtitusi caesar cipher dengan 3 huruf ke kanan
+# (eng)Decryption is done by using caesar cipher substitution with 3 letters to the right
 
-
-#MULAI
-# inisialisasi
-# Fungsi dekripsi Subtitusi Caesar Cipher   
+#MULAI/START
+# inisialisasi/INITIATE
+# Fungsi dekripsi Subtitusi Caesar Cipher / Caesar Cipher Subtitution decryption function  
 def SDekripsi(Kar):
     if Kar == 'D' :
         return 'A'
@@ -66,14 +67,14 @@ def SDekripsi(Kar):
     else :
         return ''
 
-#List untuk Hasil Dekripsi
+#List untuk Hasil Dekripsi/ list for decryption result
 Pteks = []
 
-#realisasi
+#realisasi/ realisation
 teks = input("masukan cipher teks : ")
-#mengubah semua inputan teks menjadi kapital
+#mengubah semua inputan teks menjadi kapital/ capitalized the input
 Cteks = teks.upper()
-#menghilangkan spasi di Cteks
+#menghilangkan spasi di Cteks/ removing space from Cteks
 Ateks = []
 for j in range(len(Cteks)):
     if Cteks[j] != ' ' :
@@ -81,7 +82,7 @@ for j in range(len(Cteks)):
 print(Ateks)
 
 
-#mulai proses dekripsi
+#mulai proses dekripsi/ begin decryption process
 for i in range(len(Ateks)):
     Pteks.append(SDekripsi(Ateks[i]))
 print ("Plainteks yang didapatkan dari dekripsi Caesar Cipher adalah ="+" ".join(Pteks))
