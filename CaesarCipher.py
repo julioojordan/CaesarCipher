@@ -1,5 +1,7 @@
 # Decryption Using Caesar CIPHER Subtitution
 # JULIO ANDYAN JORDAN ARYANTO (24060117130078)
+# Diponegoro University
+# IT 17
 from array import *
 from nltk import *
 
